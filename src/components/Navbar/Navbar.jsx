@@ -7,11 +7,11 @@ import { TfiWorld } from "react-icons/tfi";
 
 const Navbar = () => {
     return (
-        <div className="bg-base-100 shadow-sm">
+        <div className="bg-[#FAFAFA] shadow-sm sticky top-0 z-50">
             <div className="navbar container mx-auto">
                 <div className="navbar-start">
                     <Link>
-                        <img src={logo} alt="" />
+                        <img className="back" src={logo} alt="" />
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
@@ -34,7 +34,7 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 absolute right-0 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            className="menu menu-sm dropdown-content bg-base-100 absolute right-0 rounded-box z-1 mt-3 w-60 p-2 shadow-lg">
                             <li className="mb-1">
                                 <Link className="text-[14px]"><FaRegQuestionCircle className="text-base" /> <span >Help Center</span></Link>
                             </li>
